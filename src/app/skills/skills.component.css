@@ -1,0 +1,31 @@
+.title{
+  margin: 2rem;
+}
+
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.image-row {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.image-item {
+  text-align: center;
+  margin: 1rem 5rem;
+}
+
+.image-item img {
+  width: 128px;
+  height: 128px;
+}
+
+.image-label {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+

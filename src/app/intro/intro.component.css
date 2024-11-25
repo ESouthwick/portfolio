@@ -1,0 +1,24 @@
+.intro{
+  height: 80%;
+  background-color:#3c4a67 ;
+  span{
+    font-weight: bold;
+    font-size: 4rem;
+    color: white;
+    text-align: center;
+    padding-top: 50%;
+  }
+  .introText{
+     margin: 0 5rem 0 5rem;
+     padding-top: 12rem;
+     width: 80%;
+     max-width: 100rem;
+     text-align: left;
+
+     p{
+       font-size: 1.5rem;
+       margin-bottom: 2rem;
+     }
+
+  }
+}
