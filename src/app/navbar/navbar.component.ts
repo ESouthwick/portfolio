@@ -42,8 +42,4 @@ export class NavbarComponent{
       });
     }, 100);
   }
-
-  showResume(){
-
-  }
 }

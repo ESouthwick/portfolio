@@ -16,13 +16,4 @@ export class ContactComponent {
   xIcon = '/assets/icons/x-50.png';
   resume = '/assets/icons/resume-50.png';
   emailIcon = '/assets/icons/envelope-64.png';
-
-  // downloadPdf() {
-  //   const pdfPath = '/assets/files/evansouthwickCV.pdf';
-  //   const link = document.createElement('a');
-  //   link.href = pdfPath;
-  //   link.download = 'evansouthwickCV.pdf'; // Optional: specify a download filename
-  //   link.click();
-  // }
-
 }
