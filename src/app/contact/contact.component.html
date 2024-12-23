@@ -1,71 +1,47 @@
 <div class="section-container">
-  <h2>Contact</h2>
-  <p>Fill out the form below if you'd like to reach out</p>
-  <form
-    action="https://formkeep.com/f/d783731e1e47"
-    accept-charset="UTF-8"
-    enctype="multipart/form-data"
-    method="POST"
-  >
-    <mat-form-field>
-      <mat-label for="name">Enter your name</mat-label>
-      <input
-        matInput
-        placeholder="Bob"
-        type="text"
-        id="name"
-        name="name"
-        required
-      />
-      <!-- <mat-error *ngIf="name.invalid">{{ getErrorMessage('name') }}</mat-error> -->
-    </mat-form-field>
-    <mat-form-field>
-      <mat-label for="email">Enter your email</mat-label>
-      <input
-        matInput
-        placeholder="bob@mail.com"
-        type="email"
-        id="email"
-        required
-        name="email"
-      />
-      <!-- <mat-error *ngIf="name.invalid">{{ getErrorMessage('email') }}</mat-error> -->
-    </mat-form-field>
-    <mat-form-field>
-      <mat-label for="message">Message</mat-label>
-      <textarea
-        matInput
-        type="textarea"
-        id="message"
-        name="message"
-        required
-      ></textarea>
-    </mat-form-field>
-    <button mat-raised-button color="primary" type="submit" id="submit">
-      Submit
-    </button>
-  </form>
-  <p>Or reach me on one of these platforms</p>
-  <div class="btn-container">
-    <a
-      href="https://www.linkedin.com/in/jason-edman-140724241/"
-      target="_blank"
-      aria-label="Check out my linkedin"
-    ><i class="fa-brands fa-linkedin fa-2xl" style="color: #0077b5"></i
-    ></a>
-    <a
-      href="https://github.com/jpe0824"
-      target="_blank"
-      aria-label="Check out my github"
-    ><i class="fa-brands fa-github fa-2xl" style="color: #010432"></i
-    ></a>
-    <a href="mailto:jason.e24@gmail.com" aria-label="Send me an email">
-      <i class="fa-regular fa-envelope fa-2xl" style="color: #ff4242"></i
-      ></a>
-    <a
-      href="https://discordapp.com/users/691278886666895382"
-      aria-label="Find me on discord"
-    ><i class="fa-brands fa-discord fa-2xl" style="color: #5865f2"></i
-    ></a>
+    <div class="btn-container">
+      <span class="example-spacer"></span>
+
+<!--      <button mat-icon-button (click)="downloadPdf()">-->
+<!--             <img [src]="resume" alt="Download Resume">-->
+<!--      </button>-->
+
+      <a href="mailto:evan.southwick5@gmail.com" aria-label="Send me an email">
+        <button mat-icon-button>
+          <img [src]="emailIcon" alt="Github">
+        </button>
+      </a>
+
+      <a href="https://www.linkedin.com/in/evan-southwick-85940316b/"
+         target="_blank"
+         aria-label="Check out my linkedin">
+        <button mat-icon-button>
+          <img [src]="linkedinIcon" alt="Github">
+        </button>
+      </a>
+
+      <a href="https://github.com/ESouthwick"
+         target="_blank"
+         aria-label="Check out my github">
+        <button mat-icon-button>
+          <img [src]="githubIcon" alt="Github">
+        </button>
+      </a>
+
+<!--      <a href="https://x.com/evansouth5"-->
+<!--         target="_blank"-->
+<!--         aria-label="Check out my github">-->
+<!--        <button mat-icon-button>-->
+<!--          <img [src]="xIcon" alt="Github">-->
+<!--        </button>-->
+<!--      </a>-->
+
+      <a href="https://discordapp.com/users/666096107457085469"
+         aria-label="Find me on discord">
+        <button mat-icon-button>
+            <img [src]="discordIcon" alt="Github">
+        </button>
+      </a>
+
   </div>
 </div>

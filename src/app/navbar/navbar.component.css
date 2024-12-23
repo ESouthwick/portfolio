@@ -1,6 +1,8 @@
 mat-toolbar{
   color:#ffffff;
   background-color:#3c4a67;
+  position: fixed;
+  z-index: 1000;
 }
 
 .example-spacer {

@@ -1,34 +1,49 @@
 <mat-toolbar>
-  <button mat-button class="home" aria-label="home">
+  <button mat-button class="home" (click)="goTo('targetHome')">
     <span>Home</span>
   </button>
 <span>&nbsp;</span>
-  <button mat-button class="about" aria-label="about">
+  <button mat-button class="about" (click)="goTo('targetAbout')">
     <span>About</span>
   </button>
   <span>&nbsp;</span>
 
-  <button mat-button class="projects" aria-label="projects">
-    <span>Projects</span>
-  </button>
-  <span>&nbsp;</span>
+<!--  <button mat-button class="projects" (click)="goTo('targetHome')">-->
+<!--    <span>Projects</span>-->
+<!--  </button>-->
+<!--  <span>&nbsp;</span>-->
 
-  <button mat-button class="contact" aria-label="contact">
+  <button mat-button class="contact" (click)="goTo('targetContact')">
     <span>Contact</span>
   </button>
   <span>&nbsp;</span>
 
-  <button mat-button class="resume" aria-label="resume">
-    <span>Resume</span>
-  </button>
+  <app-resume *ngIf="!isResumeActive"></app-resume>
 
   <span class="example-spacer"></span>
 
+  <a href="mailto:evan.southwick5@gmail.com" aria-label="Send me an email">
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with email icon">
+      <img [src]="emailIcon" alt="Github">
+    </button>
+  </a>
+
   <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
-    <mat-icon>mail_outline</mat-icon>
-  </button>
-  <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
-    <mat-icon>share</mat-icon>
+    <img [src]="shareIcon" alt="Github">
   </button>
 
 </mat-toolbar>
+
+<span></span>
+
+<app-intro id="targetHome" *ngIf="!isResumeActive"></app-intro>
+<app-about-me id="targetAbout" *ngIf="!isResumeActive"></app-about-me>
+<app-skills></app-skills>
+<app-contact id="targetContact" *ngIf="!isResumeActive"></app-contact>
+
+
+<footer>
+  <mat-toolbar color="primary">
+    <p>Designed and built by Evan Southwick 2024</p>
+  </mat-toolbar>
+</footer>

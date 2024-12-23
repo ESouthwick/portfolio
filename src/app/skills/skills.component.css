@@ -1,31 +1,34 @@
-.title{
-  margin: 2rem;
-}
-
 .image-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  max-width: 450px;
 }
 
-.image-row {
+.card-container {
   display: flex;
-  justify-content: space-around;
   flex-direction: row;
 }
 
-.image-item {
-  text-align: center;
-  margin: 1rem 5rem;
+.tile-container {
+  display: flex;
+  flex-direction: column;
+  height: 80px;
+  width: 80px;
+  img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
 }
 
-.image-item img {
-  width: 128px;
-  height: 128px;
+.about-card {
+  max-height: 675px;
+  overflow-y: auto;
 }
 
-.image-label {
-  font-size: 1.2rem;
-  margin-top: 1rem;
+@media (max-width: 767px) {
+  .card-container {
+    flex-direction: column;
+    max-width: 100vw;
+  }
 }
-

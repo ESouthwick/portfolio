@@ -1,55 +1,16 @@
-<h1 class="title">My Skills</h1>
-<div class="image-container">
-  <div class="image-row">
-    <div class="image-item">
-      <img [src]="angularIcon" alt="Angular">
-      <p class="image-label">Angular</p>
+
+
+<h2>My Skills</h2>
+<mat-grid-list [cols]="numCols" rowHeight="100px">
+  <mat-grid-tile
+    *ngFor="let tile of tiles"
+    [colspan]="tile.cols"
+    [rowspan]="tile.rows"
+  >
+    <div class="tile-container">
+       <img [src]="tile.icon.valueOf()" [alt]="tile.text" [title]="tile.text" class="skill-icon" />
+
+      <p>{{ tile.text }}</p>
     </div>
-    <div class="image-item">
-      <img [src]="htmlIcon" alt="HTML5">
-      <p class="image-label">HTML5</p>
-    </div>
-    <div class="image-item">
-      <img [src]="cssIcon" alt="CSS3">
-      <p class="image-label">CSS3</p>
-    </div>
-    <div class="image-item">
-      <img [src]="typescriptIcon" alt="Typescript">
-      <p class="image-label">Typescript</p>
-    </div>
-    <div class="image-item">
-      <img [src]="intelliJIcon" alt="IntelliJ">
-      <p class="image-label">IntelliJ</p>
-    </div>
-    <div class="image-item">
-      <img [src]="vsCodeIcon" alt="vsCode">
-      <p class="image-label">VSCode</p>
-    </div>
-  </div>
-  <div class="image-row">
-    <div class="image-item">
-      <img [src]="githubIcon" alt="Github">
-      <p class="image-label">Github</p>
-    </div>
-    <div class="image-item">
-      <img [src]="gitIcon" alt="Git">
-      <p class="image-label">Git</p>
-    </div>
-    <div class="image-item">
-      <img [src]="restfulIcon" alt="RESTful API">
-      <p class="image-label">RESTful API</p>
-    </div>
-    <div class="image-item">
-      <img [src]="pythonIcon" alt="Python">
-      <p class="image-label">Python</p>
-    </div>
-    <div class="image-item">
-      <img [src]="javaIcon" alt="Java">
-      <p class="image-label">Java</p>
-    </div>
-    <div class="image-item">
-      <img [src]="postgresIcon" alt="Postgresql">
-      <p class="image-label">Postgresql</p>
-    </div>
-  </div>
-</div>
+  </mat-grid-tile>
+</mat-grid-list>
