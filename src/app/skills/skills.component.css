@@ -12,13 +12,14 @@
   flex-direction: column;
   height: 80px;
   width: 80px;
-  img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 32px;
-    margin-bottom: 10px;
-  }
+}
+
+img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  margin-bottom: 10px;
 }
 
 .about-card {
