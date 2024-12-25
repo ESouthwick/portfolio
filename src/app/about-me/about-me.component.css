@@ -21,9 +21,10 @@ height: 54rem;
   flex-direction: row;
   justify-content: left;
   font-size: 1.7rem;
-  p{
-    margin-left: 2rem;
-  }
+}
+
+p{
+  margin-left: 2rem;
 }
 
 @media (max-width: 1260px) {
