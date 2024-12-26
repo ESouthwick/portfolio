@@ -10,5 +10,4 @@ import { MatCardModule } from "@angular/material/card";
   styleUrls: ['./about-me.component.css']
 })
 export class AboutMeComponent {
-  famPicture = '/assets/images/family.jpg';
 }

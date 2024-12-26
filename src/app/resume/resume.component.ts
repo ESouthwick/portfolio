@@ -12,8 +12,6 @@ import {MatButtonModule} from "@angular/material/button";
 })
 export class ResumeComponent {
   showResume = false;
-  resumeIcon = '/assets/icons/resume-50.png';
-  closeIcon = '/assets/icons/close-50.png';
 
   showMe(){
     this.showResume = !this.showResume;

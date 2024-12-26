@@ -22,8 +22,6 @@ import { ResumeComponent } from "../resume/resume.component";
 })
 export class NavbarComponent{
   isResumeActive: boolean = false;
-  emailIcon = '/assets/icons/envelope-64.png';
-  shareIcon= '/assets/icons/share-50.png';
 
   constructor(private scroller: ViewportScroller, private router: Router) {
   }
