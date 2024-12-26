@@ -1,0 +1,33 @@
+.resume-card{
+  position: fixed; /* Stays fixed on the page */
+  top: 5%; /* Distance from the top of the page */
+  left: 10%; /* Distance from the left of the page */
+  width: 80%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Optional shadow for better visibility */
+  background-color: #f6f7fa;
+}
+
+span{
+  font-size: 1.2rem;
+}
+
+mat-card-content{
+  width: 95%;
+  height: 90%;
+}
+
+mat-card-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-top: 0px;
+}
+
+.example-spacer {
+  flex: 1 2 auto;
+}

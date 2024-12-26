@@ -1,0 +1,30 @@
+<button mat-button class="resume" (click)="showMe()">
+  <span>
+    Resume
+  </span>
+</button>
+
+<mat-card *ngIf="showResume" class="resume-card">
+  <mat-card-header>
+    <mat-card-actions align="end">
+      <button mat-icon-button class="close" (click)="showMe()">
+        <img [src]="closeIcon">
+      </button>
+      <span class="example-spacer"></span>
+    </mat-card-actions>
+  </mat-card-header>
+  <mat-card-content>
+    <object
+      data="../../assets/files/evansouthwickCV.pdf"
+      type="application/pdf"
+      width="100%"
+      height="850px"
+    >
+      <p>
+        Unable to display PDF file.
+        <a href="../../assets/files/evansouthwickCV.pdf">Download</a> instead.
+      </p>
+    </object>
+  </mat-card-content>
+</mat-card>
+
