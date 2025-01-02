@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, HostListener} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {MatIconModule} from "@angular/material/icon";
 import {MatGridListModule} from "@angular/material/grid-list";
@@ -17,5 +17,21 @@ export interface Tile {
   styleUrls: ['./skills.component.css']
 })
 export class SkillsComponent {
-  numCols = 6;
+  numCols = 12;
+  screenWidth: number = window.innerWidth; // Initial screen width
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event: any): void {
+    this.screenWidth = event.target.innerWidth; // Update on resize
+    if (this.screenWidth < 600) {
+      this.numCols = 3; // Small screens
+    } else if (this.screenWidth < 1100) {
+      this.numCols = 6; // Medium screens
+    } else {
+      this.numCols = 12; // Large screens
+    }
+  }
+
+
+
 }
