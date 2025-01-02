@@ -17,4 +17,5 @@ export interface Tile {
   styleUrls: ['./skills.component.css']
 })
 export class SkillsComponent {
+  numCols = 6;
 }
