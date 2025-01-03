@@ -3,11 +3,12 @@
 }
 
 mat-card{
-height: 54rem;
+  height: 54rem;
 }
 
 .about-card {
   overflow-y: auto;
+  margin-right: 2rem;
 }
 
 .image-container {

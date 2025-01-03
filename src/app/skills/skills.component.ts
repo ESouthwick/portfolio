@@ -25,7 +25,7 @@ export class SkillsComponent {
     this.screenWidth = event.target.innerWidth; // Update on resize
     if (this.screenWidth < 600) {
       this.numCols = 3; // Small screens
-    } else if (this.screenWidth < 1100) {
+    } else if (this.screenWidth < 1260) {
       this.numCols = 6; // Medium screens
     } else {
       this.numCols = 12; // Large screens
