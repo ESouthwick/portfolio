@@ -14,7 +14,14 @@ mat-card{
 .image-container {
   width: 47.5rem;
   margin-left: 2rem;
+}
 
+@media (max-width: 1260px) {
+  .image-container  {
+    width: 47.5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
 }
 
 .card-container {
