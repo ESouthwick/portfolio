@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "deploy": "ng build --configuration production --base-href=https://esouthwick.github.io/portfolio/ && gh-pages --dist dist/"
   },
   "private": true,
   "dependencies": {
